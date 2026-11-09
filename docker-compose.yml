@@ -52,5 +52,11 @@ services:
     command: scheduler
     restart: on-failure
 
+
+  metabase:
+    image: metabase/metabase:latest
+    ports:
+      - "3000:3000"
+    restart: on-failure
 volumes:
   postgres_data:
