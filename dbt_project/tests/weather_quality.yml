@@ -1,0 +1,24 @@
+﻿version: 2
+
+models:
+  - name: stg_weather_raw
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+      - name: temperature
+        tests:
+          - not_null
+      - name: city
+        tests:
+          - not_null
+
+  - name: daily_weather_summary
+    columns:
+      - name: fetch_date
+        tests:
+          - not_null
+      - name: hours_recorded
+        tests:
+          - not_null
