@@ -1,4 +1,4 @@
-﻿# Python
+# Python
 venv/
 __pycache__/
 *.pyc
@@ -22,3 +22,6 @@ Thumbs.db
 
 # Scripts temporaires
 fix_port.py
+
+# Variables environnement
+.env
